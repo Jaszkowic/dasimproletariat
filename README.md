@@ -1,2 +1,0 @@
-# dasimproletariat
-Das Improletariat
