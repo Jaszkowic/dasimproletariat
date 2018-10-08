@@ -176,7 +176,6 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  height: 100vh;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -206,8 +205,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+  header.masthead {
+    height: 100vh;
+  }
   header.masthead .intro-text {
-    padding-top: 300px;
+    padding-top: 40vh;
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {

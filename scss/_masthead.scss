@@ -3,8 +3,6 @@ header.masthead {
   text-align: center;
   color: white;
 
-  height: 100vh;
-
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -32,8 +30,9 @@ header.masthead {
 }
 @media(min-width:768px) {
   header.masthead {
+    height: 100vh;
     .intro-text {
-      padding-top: 300px;
+      padding-top: 40vh;
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 20px;
