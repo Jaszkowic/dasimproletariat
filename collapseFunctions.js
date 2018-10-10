@@ -1,9 +1,22 @@
 let collapseVisible = {};
+let lazyActivated = false;
+
 function toggleCollapseElement(targetName, parentName) {
 
     if(collapseVisible[targetName] === undefined) {
         collapseVisible[targetName] = false;
     }
+
+    if(!lazyActivated) {
+        $(".carousel").on("slide.bs.carousel", function(ev) {
+            console.log('slided');
+            let lazy = $(ev.relatedTarget).find("img[data-src]");
+            lazy.attr("src", lazy.data('src'));
+            lazy.removeAttr("data-src");
+        });
+        lazyActivated = true;
+    }
+
     setTimeout(function() {
         const mainNavHeight = $("#mainNav").innerHeight();
         if(!collapseVisible[targetName]) {
