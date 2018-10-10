@@ -1,4 +1,16 @@
 // Styling for the timeline section
+
+.slideCloseButton {
+  color: $primary;
+  position: absolute;
+  z-index: 20;
+  top: 4px;
+  right:4px;
+  &:hover {
+    color: darken($primary, 20%);
+  }
+}
+
 .timeline {
   position: relative;
   padding: 0;
