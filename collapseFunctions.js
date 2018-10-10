@@ -1,7 +1,11 @@
-let collapseVisible = false;
+let collapseVisible = {};
 function toggleCollapseElement(targetName, parentName) {
+    
+    if(collapseVisible[targetName] === undefined) {
+        collapseVisible[targetName] = false;
+    }
     setTimeout(function() {
-        if(!collapseVisible) {
+        if(!collapseVisible[targetName]) {
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(`#${targetName}`).offset().top - $("#mainNav").height() - 16
             }, 100);
@@ -10,6 +14,6 @@ function toggleCollapseElement(targetName, parentName) {
                 scrollTop: $(`#${parentName}`).offset().top - $("#mainNav").height() - 16
             }, 100);
         }
-        collapseVisible = !collapseVisible;
+        collapseVisible[targetName] = collapseVisible[targetName] = !collapseVisible[targetName];
     }, 100);
 }
