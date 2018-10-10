@@ -1,5 +1,33 @@
 // Styling for the timeline section
 
+@media(min-width: 768px) {
+  .customCarousel {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media(max-width: 768px) {
+  .customCarousel {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+
 .slideCloseButton {
   color: $primary;
   position: absolute;
