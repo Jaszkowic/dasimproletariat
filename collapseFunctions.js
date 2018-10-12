@@ -9,7 +9,6 @@ function toggleCollapseElement(targetName, parentName) {
 
     if(!lazyActivated) {
         $(".carousel").on("slide.bs.carousel", function(ev) {
-            console.log('slided');
             let lazy = $(ev.relatedTarget).find("img[data-src]");
             lazy.attr("src", lazy.data('src'));
             lazy.removeAttr("data-src");
