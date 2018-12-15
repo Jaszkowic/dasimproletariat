@@ -24,7 +24,8 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
     <script src="insertImages.js"></script>
-</head>
+    <script src="collapseFunctions.js"></script>
+    </head>
 
 <body id="page-top">
 
@@ -94,34 +95,71 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Shows</h2>
-                <h3 class="section-subheading text-muted">Unsere nächste Show ist zusammen mit den <a href="https://www.mafia-penguins.de" target="_blank">Mafia Penguins</a> am 13.11.2018 um 19:30 im <a href="https://www.facebook.com/Aufsturz-145672618809734" target="_blank">Aufsturz, Berlin-Mitte</a></h3>
+                <h3 class="section-subheading text-muted">Unsere nächste Show ist am 26. Februar 2019 um 19:30 im <a href="https://www.facebook.com/Aufsturz-145672618809734" target="_blank">Aufsturz, Berlin-Mitte</a></h3>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <ul class="timeline">
-                    <li>
+
+                    <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="img/shows/1311/feature.jpg" alt="">
-                            <!--<h4>13.11.2018-->
-                                <!--<br>Aufsturz-->
-                                <!--<br>Berlin-Mitte-->
-                            <!--</h4>-->
+                            <a data-toggle="collapse" href="#show0810images" onclick={toggleCollapseElement('show0810images','show0810')}>
+                                <img class="rounded-circle img-fluid" src="img/shows/0810/feature.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>26. Februar 2019</h4>
+                                <h4 class="subheading">Back to the roots!</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Who the fuck is Harold?</p>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li id="show13112018">
+                        <div class="timeline-image">
+                            <img class="rounded-circle img-fluid" src="img/shows/13112018/feature.jpg" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>13. November 2018</h4>
-                                <h4 class="subheading">Ein Dorf, 6 Schicksale, eine Geschichte
+                                <h4 class="subheading">Ein Dorf, 6 Schicksale, eine Geschichte</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">
-                                    In einer Langform spielen die Spieler_innen der Mafia Penguins mit dem Improletariat die Geschichte eines Dorfes und seiner Gemeinschaft. Tiefgründig und doch mit Witz wird dieses Drama den Abend ausfüllen und das Schicksal der sechs Dorfbewohner_innen ergründen – das Dorf wird auf der Bühne gezeichnet und wird durch das Publikum geschaffen und inspiriert.
-                                    <br>
-                                    <a href="https://www.facebook.com/events/495925490906834/" target="_blank">Zur Facebook-Veranstaltung</a>
+                                    In einer Langform spielten die Spieler_innen der Mafia Penguins mit dem Improletariat
+                                    die Geschichte eines Dorfes und seiner Gemeinschaft. Tiefgründig und doch mit
+                                    Witz erlebten die Zuschauer mit wie ein aufstrebender Aushilfslehrer erst die Magie
+                                    zurück in die Stadt brachte um sie dann dem Untergang zu weihen.
+                                    Nur Schwester Margot hatte eine dunkle Ahnung und verblieb mit einem kleinen
+                                    Funken in ihren Fingern zurück in Schutt und Asche.
+                                    Aber wenigstens stinkt die Einhorn-Scheiße jetzt nie wieder.
+                                </p>
+                                <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#show13112018images" style="margin-top: 8px;"  onclick={toggleCollapseElement('show13112018images','show13112018')}>
+                                    Zu den Bildern
+                                </a>
                             </div>
                         </div>
                     </li>
-                    <script src="collapseFunctions.js"></script>
+                    <li id="show13112018images" class="collapse" style="transition: none !important;" >
+                        <div id="show13112018controls" class="carousel slide customCarousel" data-ride="carousel">
+                            <button class="btn btn-link btn-s slideCloseButton" data-toggle="collapse" href="#show13112018images" onclick={toggleCollapseElement('show13112018images','show13112018')}><a class="fas fa-times"></a></button>
+                            <div class="carousel-inner" id="show13112018imagesContainer">
+                            </div>
+                            <a class="carousel-control-prev" href="#show13112018controls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#show13112018controls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </li>
+
+
                     <li class="timeline-inverted" id="show0810">
                         <div class="timeline-image">
                             <a data-toggle="collapse" href="#show0810images" onclick={toggleCollapseElement('show0810images','show0810')}>
@@ -137,14 +175,14 @@
                                 <p class="text-muted">Eine Woche nach dem Tag der deutschen Wiedervereinigung feierten wir einen Abend frei nach dem Motto: Wieder-vereinigt.
                                     Hier haben wir erfahren, dass das Rad 1910 von zwei Zeitreisenden erfunden wurde und durften mit dem Entwickler des Teflon-beschichteten Leopardenfell-Kondoms sprechen.
                                     Außerdem hat uns die große Laudatio über den etwas begriffsstutzigen Jürgen gezeigt, dass man lieber die Finger von Feinwaschmittel lassen sollte.
-                                    Wir danken den Zuschauern für die tollen Vorgaben und freuen uns auf die nächste Show.</p>
+                                    Wir danken den Zuschauern für die tollen Vorgaben und freuen uns auf die nächste Show.
+                                </p>
                                 <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#show0810images" style="margin-top: 8px;"  onclick={toggleCollapseElement('show0810images','show0810')}>
                                     Zu den Bildern
                                 </a>
                             </div>
                         </div>
                     </li>
-
                     <li id="show0810images" class="collapse" style="transition: none !important;" >
                         <div id="show0810controls" class="carousel slide customCarousel" data-ride="carousel">
                             <button class="btn btn-link btn-s slideCloseButton" data-toggle="collapse" href="#show0810images" onclick={toggleCollapseElement('show0810images','show0810')}><a class="fas fa-times"></a></button>
@@ -158,6 +196,8 @@
                             </a>
                         </div>
                     </li>
+
+
                     <li id="show2606">
                         <div class="timeline-image">
                             <a data-toggle="collapse" href="#show2606images" onclick={toggleCollapseElement('show2606images','show2606')}>
@@ -170,9 +210,17 @@
                                 <h4 class="subheading">Die Uraufführung</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">„Nach Karl Marx sind Improletarier Menschen, die nichts anderes
-                                    besitzen als ihre Spielfreude, die also allein durch die Darstellung ihrer
-                                    Emotionen ihre überwältigende Außenwirkung erzielen können.“</p>
+                                <p class="text-muted">
+                                    Das erste Mal im Namen des Improletariats wurde das Puplikum zu Beginn mit
+                                    Wortfetzen aus den verschiedensten Theaterstücken überrascht.
+                                    Anschließend durften wir bei Apple Mäuschen spielen und erlebten die Geburt des
+                                    iHolograms. Wir waren mit euch in einer Sauna auf dem Friedhof und haben gelben
+                                    Kaffee mit Hammer-Hüten getrunken, während irgendwo ein junges Mädchen versuchte
+                                    ihren Onkel zu verführen, der sich als Internet-Stalker heraus stellte.
+                                    Nach der Pause sind wir dann mit unserem Lang-Format in den Urlaub gefahren.
+                                    Wir hoffen, ihr hattet dabei genau so viel Spaß, wie wir.
+                                </p>
+
                                 <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#show2606images" style="margin-top: 8px;" onclick={toggleCollapseElement('show2606images','show2606')}>
                                     Zu den Bildern
                                 </a>
@@ -180,7 +228,7 @@
                         </div>
                     </li>
                     <li id="show2606images" class="collapse" style="transition: none !important;" >
-                        <div id="show2606controls" class="carousel slide customCarousel" data-ride="carousel" style="back">
+                        <div id="show2606controls" class="carousel slide customCarousel" data-ride="carousel">
                             <button class="btn btn-link btn-s slideCloseButton" data-toggle="collapse" href="#show2606images" onclick={toggleCollapseElement('show2606images','show2606')}><a class="fas fa-times"></a></button>
                             <div class="carousel-inner" id="show2606imagesContainer"></div>
 
@@ -255,7 +303,7 @@
                     <h4>Philipp</h4>
                 </div>
             </div>
-            
+
             <div class="col-sm-4">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/team/sarah.jpg" alt="">
