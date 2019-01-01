@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v5.0.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
@@ -482,6 +482,15 @@ header.masthead .intro-text .intro-heading {
   border-left-width: 0;
 }
 
+.timeline > li .dot {
+  height: 30px;
+  width: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+}
+
 .timeline > li .timeline-image {
   position: absolute;
   z-index: 100;
@@ -554,6 +563,15 @@ header.masthead .intro-text .intro-heading {
     padding: 0 20px 20px 30px;
     text-align: right;
   }
+  .timeline > li .dot {
+    height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+  }
   .timeline > li .timeline-image {
     left: 50%;
     width: 100px;
@@ -579,15 +597,19 @@ header.masthead .intro-text .intro-heading {
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
+  .timeline > li .dot {
+    height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+  }
   .timeline > li .timeline-image {
     width: 150px;
     height: 150px;
     margin-left: -75px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 30px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
@@ -600,6 +622,15 @@ header.masthead .intro-text .intro-heading {
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
+  }
+  .timeline > li .dot {
+    height: 30px;
+    width: 30px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
   }
   .timeline > li .timeline-image {
     width: 170px;
