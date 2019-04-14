@@ -3,7 +3,7 @@ header.masthead {
   text-align: center;
   color: white;
 
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -16,7 +16,7 @@ header.masthead {
       font-size: 11px;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
+      @include default-font;
     }
     .intro-heading {
       font-size: 50px;
@@ -24,7 +24,7 @@ header.masthead {
       line-height: 50px;
       margin-bottom: 25px;
       color: $primary;
-      @include script-font;
+      @include default-font;
     }
   }
 }
@@ -38,7 +38,7 @@ header.masthead {
         font-size: 20px;
         line-height: 40px;
         margin-bottom: 25px;
-        @include serif-font;
+        @include default-font;
       }
       .intro-heading {
         font-size: 75px;
@@ -46,7 +46,7 @@ header.masthead {
         line-height: 75px;
         margin-bottom: 50px;
         color: $primary;
-        @include script-font;
+        @include default-font;
       }
     }
   }
