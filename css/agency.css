@@ -114,6 +114,10 @@ img::-moz-selection {
   background: transparent;
 }
 
+* {
+  overflow-x: hidden;
+}
+
 #mainNav {
   background-color: #212529;
 }
