@@ -1,5 +1,5 @@
 window.onload = function() {
-    let shows = [{name: '26062018', numImgs: 2}, {name: '08102018', numImgs: 27}, {name: '13112018', numImgs: 6}, {name: '26032019', numImgs: 5}];
+    let shows = [{name: '26062018', numImgs: 2}, {name: '08102018', numImgs: 27}, {name: '13112018', numImgs: 6}, {name: '26032019', numImgs: 5}, {name: '14052019', numImgs: 10}];
     for (let n = 0; n < shows.length; n++) {
         let show = shows[n];
         for (let i = 1; i <= show.numImgs; i++) {

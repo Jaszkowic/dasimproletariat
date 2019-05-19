@@ -19,7 +19,6 @@ function toggleCollapseElement(targetName, parentName) {
     setTimeout(function() {
         const mainNavHeight = $("#mainNav").innerHeight();
         if(!collapseVisible[targetName]) {
-            console.log(mainNavHeight);
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(`#${targetName}`).offset().top - mainNavHeight - 16
             }, 100);

@@ -75,19 +75,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Was wir machen</h2>
-                <span style="font-size: 20px;">Im | pro | vi | sa | ti | ons | the | a | ter, das <a
+                <h4 class="section-heading text-uppercase">Was wir machen</h4>
+                <span style="font-size: 18px;">Im | pro | vi | sa | ti | ons | the | a | ter, das <a
                         href="https://www.duden.de/rechtschreibung/Improvisationstheater"
                         target="_blank"><sup>1</sup></a>
                     <br>
                     <br>
                 </span>
-                <h5 class="text-muted font-italic">
+                <h6 class="text-muted font-italic">
                     Improvisationstheater (oft auch kurz Improtheater) ist eine Form des Theaters, in der dramatische
                     Szenen ohne einen geschriebenen Dialog und mit weniger oder gar keiner vorbestimmten dramatischen
                     Handlung dargestellt werden.
                     <a href="https://www.britannica.com/art/improvisation-theatre" target="_blank"><sup>2</sup></a>
-                </h5>
+                </h6>
             </div>
         </div>
     </div>
@@ -98,10 +98,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h6 class="text-muted">Nächste Show</h6>
-                <h2 class="section-heading text-uppercase">"Spieleabend"</h2>
+                <!--<h6 class="text-muted">Nächste Show</h6>-->
+                <h4 class="section-heading text-uppercase">Nächste Show</h4>
                 <br>
-                <h4 class="text-muted">14. Mai 2019 um 19:30, Einlass 19:00</h4>
+                <h4 class="text-muted">10. September 2019 um 19:30, Einlass 19:00</h4>
                 <br>
                 <h5>
                     <a href="https://www.facebook.com/Aufsturz-145672618809734" target="_blank" class="text-muted">
@@ -113,11 +113,11 @@
                     </span>
                 </h5>
                 <br>
-                <h6>
-                    <a target="_blank" href="https://www.facebook.com/events/389016541953215">
-                        Zur Facebook-Veranstaltung
-                    </a>
-                </h6>
+                <!--<h6>-->
+                    <!--<a target="_blank" href="https://www.facebook.com/events/389016541953215">-->
+                        <!--Zur Facebook-Veranstaltung-->
+                    <!--</a>-->
+                <!--</h6>-->
 
             </div>
         </div>
@@ -128,9 +128,62 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Vergangene Shows</h2>
+                <h3 class="section-heading text-uppercase">Vergangene Shows</h3>
                 <br><br>
                 <ul class="timeline">
+
+                    <li class="timeline" id="show14052019">
+                        <div class="timeline-image">
+                            <a data-toggle="collapse" href="#show14052019images"
+                               onclick={toggleCollapseElement('show14052019images','show14052019')}>
+                                <img class="rounded-circle img-fluid" src="img/shows/14052019/feature.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>14. Mai 2019</h4>
+                                <h4 class="subheading">"Spieleabend"</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Passend zum Thema Spieleabend stellte uns Prof. Dr. Herbert seine innovative Brettspielvariante
+                                    mit Lavafunktion vor, die zum Klimaschutz beitragen sollte. Auf dem Friedhof viel es uns
+                                    schwer uns für ein Genre zu entscheiden und so befanden wir uns u.a. im Western, im Horror-Film
+                                    und in Science-Fiction wieder. Während unseres wohlverdienten "Urlaubs" erfuhren wir, was Surfbrett
+                                    und Palme wirklich von uns denken und welch hartes Leben sie doch eigentlich führen.
+                                    Nach der Pause ging es dann um Geld und Liebe und darum, dass das manchmal eben einfach nicht zusammen passt.
+                                    Sprachbarrieren auf der Bühne konnten mithilfe eines Übersetzers beseitigt werden, der dann
+                                    allerdings das ein- oder andere Mal etwas zu emotional in die Sache hineingezogen wurde...
+                                    Vielen Dank an alle Zuschauer für die tollen Vorgaben!
+                                </p>
+                                <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#show14052019images"
+                                   style="margin-top: 8px;"
+                                   onclick={toggleCollapseElement('show14052019images','show14052019')}>
+                                    Zu den Bildern
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="show14052019images" class="collapse" style="transition: none !important;">
+                        <div id="show14052019controls" class="carousel slide customCarousel" data-ride="carousel">
+                            <button class="btn btn-link btn-s slideCloseButton" data-toggle="collapse"
+                                    href="#show14052019images"
+                                    onclick={toggleCollapseElement('show14052019images','show14052019')}><a
+                                    class="fas fa-times"></a></button>
+                            <div class="carousel-inner" id="show14052019imagesContainer">
+                            </div>
+                            <a class="carousel-control-prev" href="#show14052019controls" role="button"
+                               data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#show14052019controls" role="button"
+                               data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </li>
+
+
                     <li class="timeline-inverted" id="show26032019">
                         <div class="timeline-image">
                             <a data-toggle="collapse" href="#show26032019images"
@@ -372,7 +425,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Team</h2>
+                <h3 class="section-heading text-uppercase">Ensemble</h3>
                 <h3 class="section-subheading text-muted">(Das sind wir)</h3>
                 <br><br>
             </div>
@@ -431,16 +484,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="text-uppercase">Noch mehr Theater?</h2>
+                <h3 class="text-uppercase">Noch mehr Theater?</h3>
                 <br>
-                <h5 class="text-muted">Besucht gerne auch die <a href="https://www.mafia-penguins.de"
+                <h6 class="text-muted">Besucht gerne auch die <a href="https://www.mafia-penguins.de"
                                                                                     target="_blank">Mafia Penguins</a>
                     und seid bereit für den nächsten Coup!
                     <br><br>
                     Lust, selber mal Improvisationstheater auszuprobieren? <a href="https://www.playandwork.de"
                                                                               target="_blank">playandwork</a> bietet
                     Workshops an!
-                </h5>
+                </h6>
             </div>
         </div>
     </div>
@@ -451,15 +504,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="text-muted">Kontakt</h2>
+                <h3 class="text-muted">Kontakt</h3>
                 <br>
-                <h5 class="section-subheading text-muted">Hinterlasse uns gerne eine Nachricht!</h5>
+                <h6 class="section-subheading text-muted">Hinterlasse uns gerne eine Nachricht!</h6>
                 <br>
-                <h4>
+                <h5>
                     <a href="mailto:jonasjaszkowic@gmail.com"><span class="fas fa-envelope"></span>  E-Mail senden</a>
-                </h4>
+                </h5>
                 <br>
-                <span style="color: white;" class="text-muted">Copyright &copy; Das Improletariat 2018-2019</span>
+                <span style="color: white; font-size: 10px;" class="text-muted">Copyright &copy; Das Improletariat 2018-2019</span>
             </div>
         </div>
     </div>
