@@ -4,6 +4,64 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+.badge {
+  z-index: 99999;
+  color: black;
+  background-color: white;
+  font-size: x-small;
+  position: fixed;
+  margin-top: 64px;
+  left: 8px;
+  padding: 5px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.badgeLeft {
+  z-index: 99999;
+  color: black;
+  background-color: white;
+  font-size: x-small;
+  position: fixed;
+  margin-top: 64px;
+  left: -200px;
+  padding: 5px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .badge {
+    z-index: 99999;
+    color: black;
+    background-color: white;
+    font-size: x-small;
+    position: fixed;
+    margin-top: 80px;
+    margin-left: 170px;
+    padding: 5px;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .badgeLeft {
+    z-index: 99999;
+    color: black;
+    background-color: white;
+    font-size: x-small;
+    position: fixed;
+    margin-top: 80px;
+    margin-left: -170px;
+    opacity: 0;
+    padding: 5px;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Helvetica', serif;
