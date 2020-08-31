@@ -106,18 +106,18 @@ Mit den Vorschlägen des Publikums zaubern die SpielerInnen unterhaltsame Szenen
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h5 class="section-heading text-uppercase">Nächste Show</h5>
+                <!-- <h5 class="section-heading text-uppercase">Nächste Show</h5>
                 <p>
                     	<a href="https://www.facebook.com/events/579485682895605/">Zur Facebook-Veranstaltung</a>
-                    </p>
+                    </p> -->
                 <br>
                               <div class="timeline-body">
-                                <p class="text-muted">
-                                    Das Improletariat präsentiert: Faschingsdienstag.
-                                </p>
+                                <h3 class="text-muted">
+                                    Das Improletariat präsentiert: "Kulturschaffend".
+                                </h3>
                             </div>
                             <br>
-                <h5 class="text-muted">25. Februar 2020 um 19:30, Einlass 19:00</h5>
+                <h5 class="text-muted">20. September 2020 um 19:30, Einlass 19:00</h5>
                 <a href="/das-improletariat-show.ics" download>
                     <span class="fas fa-calendar-alt"></span>
                     Termin im Kalender eintragen
@@ -126,11 +126,11 @@ Mit den Vorschlägen des Publikums zaubern die SpielerInnen unterhaltsame Szenen
                 <br>
                 <h6>
                     <a href="https://www.facebook.com/Aufsturz-145672618809734" target="_blank" class="text-muted">
-                        Aufsturz <br>
+                        Alte Feuerwache<br>
                     </a>
                     <span class="text-muted">
-                        Oranienburger Str. 67 <br>
-                        10117 Berlin-Mitte
+                            Marchlewskistr. 6<br>
+                            10243 Berlin-Friedrichshain
                     </span>
                 </h6>
             </div>
@@ -146,7 +146,49 @@ Mit den Vorschlägen des Publikums zaubern die SpielerInnen unterhaltsame Szenen
                 <br><br>
                 <ul class="timeline">
 
-
+                    <li class="timeline-inverted" id="show25022020">
+                        <div class="timeline-image">
+                            <a data-toggle="collapse" href="#show25022020images"
+                               onclick={toggleCollapseElement('show25022020images','show25022020')}>
+                                <img class="rounded-circle img-fluid" src="img/shows/25022020/feature.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>25. Februar 2020</h4>
+                                <h4 class="subheading">Faschingsdienstag</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                        Das erste Mal mit Kostümen und einer neuen Spielerin, konnten wir Sophia bei ihrem ersten Date mit einem Zauberer, dem ängstlichen Typ und Model Horst begleiten. Die Charaktere im nächsten Reigen reichten von einem geistlichen Bruder, über die wunderschöne Ambrosia, bis hin zur Wahrsagerein, die sich auch als Medium versuchte. Das Hemd mit Smartphone-Unterstützung, dass immer die Wahrheit sagt, wurde am Ende doch nicht zurück gegeben und die Reise zur rosa Milchstraße musste ohne die Liebste stattfinden. Stephan King beehrte uns mit seinem Live-Roman über Detektiv Johnson und Furzipups, dem Geschöpf aus der Höhle. Auch nach der Pause gab es Beziehungen, kurz vor ihrem Scheitern, Nachbarn die mit den Klärwerken Bekanntschaft machen durften und eine Kuh namens Pupsi. Wir erfuhren, was Deko-Palme und Schminkspiegel von uns halten und wie ein Praktikum in einer Hutmacherei abläuft. Impro-Theater mit Kostümen, das Experiment an Fasching ist dank der tollen Moderation von Pascal und dem Publikum geglückt.
+                                </p>
+                                <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#show25022020images"
+                                   style="margin-top: 8px;"
+                                   onclick={toggleCollapseElement('show25022020images','show25022020')}>
+                                    Zu den Bildern
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li id="show25022020images" class="collapse" style="transition: none !important;">
+                            <div id="show25022020controls" class="carousel slide customCarousel" data-ride="carousel">
+                                <button class="btn btn-link btn-s slideCloseButton" data-toggle="collapse"
+                                        href="#show25022020images"
+                                        onclick={toggleCollapseElement('show25022020images','show25022020')}><a
+                                        class="fas fa-times"></a></button>
+                                <div class="carousel-inner" id="show25022020imagesContainer">
+                                </div>
+                                <a class="carousel-control-prev" href="#show25022020controls" role="button"
+                                   data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#show25022020controls" role="button"
+                                   data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </li>
 
                     <li class="timeline" id="show10122019">
                         <div class="timeline-image">
@@ -223,6 +265,7 @@ Frohe Feiertage! Niko O. Laus
                             </div>
                         </div>
                     </li>
+
                     <li id="show10092019images" class="collapse" style="transition: none !important;">
                         <div id="show10092019controls" class="carousel slide customCarousel" data-ride="carousel">
                             <button class="btn btn-link btn-s slideCloseButton" data-toggle="collapse"

@@ -24,12 +24,12 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 DTSTAMP:20190519T170521Z
-UID:20190519T170521Z-1436445706@marudot.com
-DTSTART;TZID=Europe/Berlin:20191210T193000
-DTEND;TZID=Europe/Berlin:20191210T220000
+UID:20190519T170521Z
+DTSTART;TZID=Europe/Berlin:20200920T193000
+DTEND;TZID=Europe/Berlin:20200920T220000
 SUMMARY:Impro-Show (Das Improletariat)
 URL:https%3A%2F%2Fdas-improletariat.de
 DESCRIPTION:Das Improletariat - Improvisationstheater aus Berlin präsentiert erneut eine Show im Aufsturz - seid dabei!
-LOCATION:Oranienburgerstr. 67\, 10117 Berlin
+LOCATION:Alte Feuerwache Kulturhaus Friedrichshain, Marchlewskistr. 6\10243 Berlin 
 END:VEVENT
 END:VCALENDAR
