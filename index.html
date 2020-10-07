@@ -146,6 +146,55 @@ Mit den Vorschlägen des Publikums zaubern die SpielerInnen unterhaltsame Szenen
                 <br><br>
                 <ul class="timeline">
 
+                    <li class="timeline" id="show20092020">
+                        <div class="timeline-image">
+                            <a data-toggle="collapse" href="#show20092020images"
+                               onclick={toggleCollapseElement('show20092020images','show20092020')}>
+                                <img class="rounded-circle img-fluid" src="img/shows/20092020/feature.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>09. September 2020</h4>
+                                <h4 class="subheading">"Ein Experiment"</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    In der russischen Version vom Dutch Square konnten wir erleben, wie ein harmloser Fahrrad-Ausflug in einer dramatischen Verfolgungsjagd zu Wasser enden kann, wie zwei Brüder durch die weisen Worte ihres Vaters (schaut nach rechts, schaut nach links...) zu Wasserwesen mutierten und warum man Philosophen kein V-förmiges Hochhaus bauen lassen sollte.
+                                    Außerdem wird eine Klage erwartet, weil der Ochsenblut-Zerstörer nicht nur die Nasenhaare entfernt hatte.
+                                    Dann konnten wir einen engagierten Regisseur bei der Arbeit mit dem goldenen Einhorn beobachten
+                                    und erlebten mit, welche Dramen sich im Zollamt abspielen können.
+                                    Nach der Pause kamen auch die Verschwörungstheoretiker nicht zu kurz und ein depressives Grammophon wollte nichts sehnlicher als endlich eine neue Platte spielen zu dürfen. Wir bedanken uns bei allen, die bei unserem Experiment dabei waren und freuen uns auf das nächste Mal!"
+                                </p>
+                                <a class="btn btn-primary btn-xs" data-toggle="collapse" href="#show20092020images"
+                                   style="margin-top: 8px;"
+                                   onclick={toggleCollapseElement('show20092020images','show20092020')}>
+                                    Zu den Bildern
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="show20092020images" class="collapse" style="transition: none !important;">
+                        <div id="show20092020controls" class="carousel slide customCarousel" data-ride="carousel">
+                            <button class="btn btn-link btn-s slideCloseButton" data-toggle="collapse"
+                                    href="#show20092020images"
+                                    onclick={toggleCollapseElement('show20092020images','show20092020')}><a
+                                    class="fas fa-times"></a></button>
+                            <div class="carousel-inner" id="show20092020imagesContainer">
+                            </div>
+                            <a class="carousel-control-prev" href="#show10122019controls" role="button"
+                               data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#show10122019controls" role="button"
+                               data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </li>
+
+
                     <li class="timeline-inverted" id="show25022020">
                         <div class="timeline-image">
                             <a data-toggle="collapse" href="#show25022020images"
