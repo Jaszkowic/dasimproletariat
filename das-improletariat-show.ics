@@ -25,8 +25,8 @@ END:VTIMEZONE
 BEGIN:VEVENT
 DTSTAMP:20190519T170521Z
 UID:20190519T170521Z
-DTSTART;TZID=Europe/Berlin:20200920T193000
-DTEND;TZID=Europe/Berlin:20200920T220000
+DTSTART;TZID=Europe/Berlin:20201108T193000
+DTEND;TZID=Europe/Berlin:20201108T220000
 SUMMARY:Impro-Show (Das Improletariat)
 URL:https%3A%2F%2Fdas-improletariat.de
 DESCRIPTION:Das Improletariat - Improvisationstheater aus Berlin präsentiert erneut eine Show im Aufsturz - seid dabei!
