@@ -8,7 +8,7 @@ window.onload = function () {
         {name: '10092019', numImgs: 0},
         {name: '10122019', numImgs: 3},
         {name: '25022020', numImgs: 5},
-        {name: '20092020', numImgs: 0}];
+        {name: '20092020', numImgs: 1}];
     for (let n = 0; n < shows.length; n++) {
         let show = shows[n];
         for (let i = 1; i <= show.numImgs; i++) {
